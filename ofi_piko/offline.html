@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>ofi_piko_site</title>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <header id="header" class="header">
+    </header>
+
+    <main class="offline">
+        <div class="offline__container">
+
+            <svg class="offline__visual" viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg">
+
+                <defs>
+                    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#1f1f1f" />
+                        <stop offset="100%" stop-color="#171717" />
+                    </linearGradient>
+                </defs>
+
+                <rect x="60" y="40" width="480" height="260" rx="24" fill="url(#panelGrad)" stroke="#2a2a2a"
+                    stroke-width="2" />
+
+                <!-- wifi arcs -->
+                <path d="M200 170 Q300 90 400 170" stroke="#bdbdbd" stroke-width="7" fill="none" stroke-linecap="round"
+                    opacity="0.8" />
+
+                <path d="M230 190 Q300 130 370 190" stroke="#8b8b8b" stroke-width="7" fill="none" stroke-linecap="round"
+                    opacity="0.6" />
+
+                <path d="M260 210 Q300 175 340 210" stroke="#6f6f6f" stroke-width="7" fill="none" stroke-linecap="round"
+                    opacity="0.4" />
+
+                <circle cx="300" cy="230" r="9" fill="#ffffff" />
+
+                <!-- glitch slash -->
+                <line x1="210" y1="110" x2="390" y2="260" stroke="#ffffff" stroke-width="6" stroke-linecap="round"
+                    opacity="0.9" />
+
+                <text x="50%" y="85%" text-anchor="middle" fill="#ffffff" font-size="26" font-family="monospace"
+                    letter-spacing="3">
+                    NO CONNECTION
+                </text>
+            </svg>
+
+            <h1 class="offline__title">Соединение потеряно</h1>
+
+            <p class="offline__text">
+                Похоже, сеть отвалилась. Проверь подключение или попробуй позже.
+            </p>
+
+            <a href="/index.html" class="offline__action">На главную</a>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+    </footer>
+    <div id="ChatStart"></div>
+    <script type="module" src="./src/script/main.js" defer></script>
+</body>
+
+</html>
