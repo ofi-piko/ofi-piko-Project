@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style/style.css">
+  <title>ofi_piko_site</title>
+</head>
+
+<body>
+  <div class="cursor"></div>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__branding">
+        <a href="#" class="header__logo">◈</a>
+        <h1 class="header__title">Ofi_piko</h1>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a id="Home section_Home" href="/index.html" class="header__link">Главная</a></li>
+          <li><a id="AboutMe section_AboutMe" class="header__link">Обо мне</a></li>
+          <li><a id="timeline section_timeline" class="header__link">Путь</a></li>
+          <li><a id="Cash section_Cash" href="./src/page/rate.html" class="header__link">Отзывы</a></li>
+          <li><a id="Project section_Project" class="header__link">Проекты</a></li>
+          <li>
+            <a id="Contact_section_Contact" class="header__link">Контакты</a>
+            <div id="contactOverlay" style="display:none;">
+              <ul id="contactMenu">
+                <li>Email: example@mail.com</li>
+                <li>Телефон: +7 999 123-45-67</li>
+                <li>Адрес: Москва, ул. Примерная</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="header__button" id="authButton">Войти/Зарегистрироваться</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="meInfo">
+      <div class="MyBio">
+        <div class="leftPanel Panel">
+          <div class="AllSocalMedia">
+            <a class="MySocalMedia" href="https://www.tiktok.com/@ofi_piko" target="_blank"><img
+                src="./public/icon/tiktok.svg" alt=""></a>
+            <a class="MySocalMedia" href="https://www.github.com/ofi-piko" target="_blank"><img
+                src="./public/icon/github.svg" alt=""></a>
+            <a class="MySocalMedia" href="https://www.instagram.com/ofi_piko/" target="_blank"><img
+                src="./public/icon/instagram.svg" alt=""></a>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div class="myInfo">
+            <div class="ageStrage">
+              <h3>лет опыта</h3>
+              <h4>1</h4>
+            </div>
+            <div class="allProject">
+              <h3>Все Проэкты</h3>
+              <h4>-</h4>
+              <h5>на гитхабе</h5>
+            </div>
+            <div class="allClient">
+              <h3>кол клиентов</h3>
+              <h4>30+</h4>
+
+            </div>
+          </div>
+        </div>
+        <div class="CenterPanel Panel">
+          <div class="Info">
+            <div class="InfoIcon">
+              <video src="./public/video/choso.mp4" autoplay loop muted></video>
+            </div>
+            <div class="infoContent">
+              <div class="infoName">---</div>
+              <div class="subtitle"><code id="codeOutput"></code></div>
+
+              <div class="buttons">
+                <button><a href="https://github.com/ofi-piko?tab=repositories">Мои
+                    миниработы</a></button>
+                <button id="toggleSoundBtn">Вкл звук</button>
+                <button><a href="">Связаться</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="RightPanel Panel">
+          <div class="skills">
+            <div class="skillTag">javscript</div>
+            <div class="skillTag">node.js</div>
+            <div class="skillTag">UI/UX</div>
+            <div class="skillTag">vite</div>
+            <div class="skillTag">figma</div>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div class="quote">
+            <div class="quoteText">Создаю современные и удобные веб-приложения, игры в браузере и другое
+              которые помогают бизнесу расти</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="meInfo2">
+
+      <div class="aboutCard">
+
+        <div class="aboutLeft">
+          <div class="avatarBlock">
+            <img src="./public/images/choso1.jpg" alt="avatarBlock">
+          </div>
+
+          <div class="badgeBlock">
+            <div class="miniBadge">Frontend Dev</div>
+            <div class="miniBadge">Backend Dev Dev</div>
+            <div class="miniBadge">UI / UX</div>
+            <div class="miniBadge">15 y.o</div>
+          </div>
+        </div>
+
+        <div class="aboutRight">
+          <h2>Обо мне</h2>
+
+          <p class="aboutText">
+            Я frontend разработчик, который делает чистые интерфейсы, живые анимации и нормальный UX без
+            боли
+          </p>
+
+          <div class="competencies">
+            <div class="competency"><code>Создание современных интерфейсов и старых по желанию</code></div>
+            <div class="competency"><code>Работа с логикой и состоянием</code></div>
+            <div class="competency"><code>UI / UX дизайн</code></div>
+            <div class="competency"><code>Производительность и оптимизация</code></div>
+          </div>
+
+          <div class="principles">
+            <div class="principle">
+              <h4>Инновации</h4>
+              <span>Постоянный поиск лучших решений</span>
+            </div>
+            <div class="principle">
+              <h4>Качество</h4>
+              <span>Аккуратность,внимание всему и мелких деталях</span>
+            </div>
+            <div class="principle">
+              <h4>Креативность</h4>
+              <span>Необычный и нестандартный подход</span>
+            </div>
+            <div class="principle">
+              <h4>Рост</h4>
+              <span>Прокачка стилей и навыков очень быстрый</span>
+            </div>
+          </div>
+
+          <div class="stack">
+            <div class="stackTag">HTML</div>
+            <div class="stackTag">CSS</div>
+            <div class="stackTag">JavaScript</div>
+            <div class="stackTag">Vite</div>
+            <div class="stackTag">Git</div>
+            <div class="stackTag">Figma</div>
+            <div class="stackTag">UX/UI</div>
+            <div class="stackTag">Python</div>
+            <div class="stackTag">FastAPI</div>
+            <div class="stackTag">MongoDB</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="timeline">
+      <div class="timelineBackground">
+        <h2>Мой путь в фронтенд-разработке с 0</h2>
+
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>2026 — Настоящее время</h3>
+              <h4>Senior Frontend разработчик</h4>
+              <p class="company">none</p>
+              <p>Сейчас я занимаюсь разработкой мини‑игр и созданием сайтов на заказ, параллельно делаю
+                визуальные эдиты и кастомные интерфейсы. Это даёт мне возможность сразу применять все
+                навыки
+                из фронтенда и бэкенда, работать с HTML, CSS, JavaScript, Vite, Git, Figma, UX/UI,
+                MongoDB и
+                React, а также экспериментировать с новыми решениями и прокачивать
+                креативный подход к проектам. И я научился пользоваться MongoDB</p>
+              <div class="timeline-skills">
+                <span>Vue3</span>
+                <span>Node.js</span>
+                <span>Docker</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2025</h3>
+              <h4>Senior Frontend разработчик</h4>
+              <p class="company">none</p>
+              <p>Во время курсов по фронтенду и бэкенду я системно прокачивал весь стек: изучал HTML и CSS
+                для
+                структуры и стилей страниц, JavaScript и Vite для интерактивности и сборки проектов, Git
+                для
+                контроля версий, Figma и UX/UI для дизайна и удобства интерфейсов, а на бэкенде осваивал
+                Python, FastAPI и MongoDB для серверной логики и работы с базами данных. Параллельно я
+                продолжал развивать проект Windows‑11‑Web, сразу применяя новые навыки на практике:
+                улучшал
+                функционал, интерфейс и логику, что позволило одновременно расти и как фронтенд-, и как
+                бэкенд‑разработчик, а знания закреплялись через реальные изменения в проекте. Но я не
+                мог
+                нормально использовать MongoDB</p>
+              <div class="timeline-skills">
+                <span>JavaScript</span>
+                <span>Vite</span>
+                <span>Git</span>
+                <span>Figma</span>
+                <span>UX/UI</span>
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2024</h3>
+              <h4>Junior Frontend Dev</h4>
+              <p class="company">none</p>
+              <p>С 2024 года я начал работать над проектом Windows‑11‑Web на GitHub. Сначала я клонировал
+                репозиторий и разбирался в структуре кода, изучал, как устроены страницы, компоненты и
+                логика проекта. Я постепенно редактировал код, исправлял ошибки, настраивал стили под
+                свои
+                нужды и добавлял новые фичи, улучшая интерфейс и адаптируя проект под современные
+                браузеры.
+                Этот процесс был пошаговым: учился, экспериментировал, рефакторил и тестировал каждое
+                изменение. В итоге проект стал для меня реальным опытом, где я прошёл путь от базового
+                клонирования до полноценной кастомизации и улучшения функционала.</p>
+              <div class="timeline-skills">
+                <span>Css</span>
+                <span>Html</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>7 июля - 7 Августа 2024</h3>
+              <h4>Старт</h4>
+              <p class="company">StartUp</p>
+              <p>Моё погружение в мир технологий началось с курса компьютерной грамотности, где я
+                последовательно освоил работу с документами, Excel, Figma, Photoshop и базовые навыки
+                работы
+                с AI. Я проходил обучение шаг за шагом, закрепляя каждый навык на практике, и успешно
+                завершил курс, заложив прочную основу для дальнейшего развития</p>
+              <div class="timeline-skills">
+                <span>docs</span>
+                <span>exel</span>
+                <span>Figma</span>
+                <span>Photoshope</span>
+                <span>AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interactiveSkillsMenu">
+      <div class="skillsButtonsWrapper">
+        <button class="catBtn" data-cat="frontend">Frontend</button>
+        <button class="catBtn" data-cat="backend">Backend</button>
+        <button class="catBtn" data-cat="databases">Databases</button>
+        <button class="catBtn" data-cat="tools">Tools</button>
+      </div>
+
+      <div class="skillsGrid">
+        <div class="skill-card frontend" id="html-skills" data-cat="frontend">
+          <div class="skill-name">HTML</div>
+          <div class="skill-desc">Семантическая разметка, доступность, SEO-оптимизация</div>
+        </div>
+        <div class="skill-card frontend" id="css-skills" data-cat="frontend">
+          <div class="skill-name">CSS</div>
+          <div class="skill-desc">Flexbox, Grid, анимации, препроцессоры (SCSS)</div>
+        </div>
+        <div class="skill-card frontend" id="javascript-skills" data-cat="frontend">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-desc">ES6+, DOM, асинхронность, промисы, async/await</div>
+        </div>
+        <div class="skill-card frontend" id="vite-skills" data-cat="frontend">
+          <div class="skill-name">Vite</div>
+          <div class="skill-desc">Современная сборка, быстрый HMR, оптимизация</div>
+        </div>
+        <div class="skill-card frontend" id="uxui-skills" data-cat="frontend">
+          <div class="skill-name">UX/UI</div>
+          <div class="skill-desc">Figma, прототипирование, пользовательские сценарии</div>
+        </div>
+
+        <div class="skill-card backend" id="nodejs-skills" data-cat="backend">
+          <div class="skill-name">Node.js</div>
+          <div class="skill-desc">Express, NestJS, REST API, JWT, WebSockets</div>
+        </div>
+        <div class="skill-card backend" id="python-skills" data-cat="backend">
+          <div class="skill-name">Python</div>
+          <div class="skill-desc">Автоматизация, скрипты, парсинг, Django basics</div>
+        </div>
+        <div class="skill-card backend" id="fastapi-skills" data-cat="backend">
+          <div class="skill-name">FastAPI</div>
+          <div class="skill-desc">Высокопроизводительные API, Pydantic, WebSockets</div>
+        </div>
+
+        <div class="skill-card databases" id="mongodb-skills" data-cat="databases">
+          <div class="skill-name">MongoDB</div>
+          <div class="skill-desc">Документоориентированная БД, агрегации, индексы</div>
+        </div>
+        <div class="skill-card databases" id="mysql-skills" data-cat="databases">
+          <div class="skill-name">MySQL</div>
+          <div class="skill-desc">Реляционные БД, JOIN, подзапросы, оптимизация</div>
+        </div>
+        <div class="skill-card databases" id="postgresql-skills" data-cat="databases">
+          <div class="skill-name">PostgreSQL</div>
+          <div class="skill-desc">Продвинутые возможности, JSONB, транзакции, PL/pgSQL</div>
+        </div>
+
+        <div class="skill-card tools" id="git-skills" data-cat="tools">
+          <div class="skill-name">Git</div>
+          <div class="skill-desc">Ветвление, merge/rebase, GitHub Flow, CI/CD основы</div>
+        </div>
+        <div class="skill-card tools" id="figma-skills" data-cat="tools">
+          <div class="skill-name">Figma</div>
+          <div class="skill-desc">Дизайн интерфейсов, компоненты, auto layout</div>
+        </div>
+        <div class="skill-card tools" id="vscode-skills" data-cat="tools">
+          <div class="skill-name">VS Code</div>
+          <div class="skill-desc">Плагины, синопты, отладка, tasks</div>
+        </div>
+        <div class="skill-card tools" id="docker-skills" data-cat="tools">
+          <div class="skill-name">Docker</div>
+          <div class="skill-desc">Контейнеризация, Docker Compose, Dockerfile</div>
+        </div>
+        <div class="skill-card tools" id="aws-skills" data-cat="tools">
+          <div class="skill-name">AWS</div>
+          <div class="skill-desc">EC2, S3, Lambda, IAM, базовые сервисы</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="MyProject">
+      <div class="app-container">
+        <div class="app_text">
+          <h3><strong>вот можно Проверить мой самый любимый проэкт</strong></h3>
+        </div>
+
+        <div class="app-menu">
+          <div class="project-title">Windows-11-Web</div>
+          <button class="fullscreen-btn">Полный экран</button>
+        </div>
+
+        <iframe class="app-frame" allowfullscreen></iframe>
+
+        <div class="fullscreen-bar">
+          <div class="fullscreen-title">Windows-11-Web</div>
+          <button class="exit-fullscreen-btn">⛶</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer id="footer">
+
+  </footer>
+  <div id="ChatStart"></div>
+
+  <script type="module" src="./src/script/main.js" defer></script>
+</body>
+
+</html>
