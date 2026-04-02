@@ -49,13 +49,3 @@ window.addEventListener('online', updateNetworkStatus)
 window.addEventListener('offline', updateNetworkStatus)
 
 updateNetworkStatus()
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', async () => {
-        try {
-            await navigator.serviceWorker.register('/public/sw.js')
-        } catch (error) {
-            console.error('SW registration failed', error)
-        }
-    })
-}
