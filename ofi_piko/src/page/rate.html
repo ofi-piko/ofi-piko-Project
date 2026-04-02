@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/style.css">
+  <title>ofi_piko_site</title>
+</head>
+
+<body>
+  <div class="cursor"></div>
+  <header id="header" class="header">
+  </header>
+
+  <main>
+    <section class="reviews-section">
+      <h2>Отзыв</h2>
+
+      <form id="myReviewForm" class="review-form">
+        <input type="text" id="myNameInput" placeholder="Имя" required>
+
+        <select id="myTypeInput" required>
+          <option value="" disabled selected>Тип отзыва</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="UX/UI">UX/UI</option>
+          <option value="DevOps">DevOps</option>
+        </select>
+
+        <textarea id="myTextInput" placeholder="Твой отзыв..." required></textarea>
+
+        <div class="star-picker" id="starPicker">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+    
+    <div class="reviews-grid"></div>
+  </main>
+
+
+
+  <footer id="footer">
+  </footer>
+  <div id="ChatStart"></div>
+  <script type="module" src="../script/main.js" defer></script>
+</body>
+
+</html>
